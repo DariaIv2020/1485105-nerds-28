@@ -7,7 +7,7 @@
   <body>
   
   <header>
-<a><img src="img/nerds-logo.png" alt="Нёрдс"></a>
+<a href="index.html"><img src="img/nerds-logo.png" alt="Нёрдс"></a>
 
 <nav>
  <ul>
@@ -33,23 +33,31 @@
    </div>
    
    <div>
-   <p>Сетка:</p> 
-   <a href=""> Адаптивная </a>
-   <a href=""> Фиксированная </a>
-   <a href=""> Резиновая </a>
+   <legend>Сетка:</legend>
+   <input type="radio" id="adaptive" checked>
+   <label for="adaptive">Адаптивная</label>
+   <input type="radio" id="fixed">
+   <label for="fixed">Фиксированная</label>
+   <input type="radio" id="rubber">
+   <label for="rubber">Резиновая</label>
    </div>
    
    <div>
    <p>Особенности:</p>
-   <a href=""> Слайдер </a>
-   <a href=""> Блок преимуществ </a>
-   <a href=""> Новости </a>
-   <a href=""> Галерея </a>
-   <a href=""> Корзина </a>  
+   <input type="checkbox" id="slide" checked>
+   <label for="slide"> Слайдер </label>
+   <input type="checkbox" id="advantages">
+   <label for="advantages"> Блок преимуществ </label>
+   <input type="checkbox" id="news" checked>
+   <label for="news"> Новости </label>
+   <input type="checkbox" id="gallery">
+   <label for="gallery"> Галерея </label>
+   <input type="checkbox" id="basket">
+   <label for="basket"> Корзина </label>  
    </div> 
    
    <div>
-       <a href=""> Показать </a>
+       <button type="button"> Показать </button>
    </div>
    </aside>
    
@@ -81,6 +89,7 @@
        </main>
   
    <footer>
+   
    <section>
     <img src="" alt="">
     <div> 
@@ -91,11 +100,24 @@
      </div>
    </section>
    
+   <section>
+       <form>
+           <p>Напишите нам</p>
+           <label for="name">Ваше имя:</label>
+           <input id="name" type="text" placeholder="Имя Фамилия">
+           <label for="email">Ваш e-mail:</label>
+           <input id="email" type="text" placeholder="email@example.com"><br>
+           <label for="text1">Текст письма:</label>
+           <textarea id="text1" rows="3" placeholder="В свободной форме"></textarea>
+           <button type="submit">Отправить</button>
+       </form>
+   </section>
+   
     <section>
      <ul>
-       <il><img src="img/vk.svg" wigth="81px" height="81px" alt="vk"></il>
-       <il><img src="img/facebook.svg" wigth="81px" height="81px" alt="facebook"></il>
-       <il><img src="img/instagram.svg" wigth="81px" height="81px" alt="instagram"></il>   
+       <il><a href="https://vk.com"><img src="img/vk.svg" wigth="81px" height="81px" alt="vk"></a></il>
+         <il><a href="https://ru-ru.facebook.com"><img src="img/facebook.svg" wigth="81px" height="81px" alt="facebook"></a></il>
+         <il><a href="https://www.instagram.com"><img src="img/instagram.svg" wigth="81px" height="81px" alt="instagram"></a></il>   
      </ul>
   </section>
    
