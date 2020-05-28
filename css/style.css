@@ -1,0 +1,72 @@
+body {font-family: 'Roboto';
+font-size: 16px;}
+
+header {
+    background-color: #EEEEEE;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+.menu {
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+.menu li {
+   list-style-type: none; 
+}
+
+.service p {
+    color:rgba(40, 49, 54, 1);
+    line-height: 24px;
+}
+
+.service h3  {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.service button {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.form {
+    display:none;
+}
+
+}
+.bottom_section {
+    line-height: 22px;
+}
+
+.bottom_section h2 {
+    font-size: 36px;
+} 
+
+.bottom-section p {
+    color: rgba(68, 68, 68, 1);
+}
+
+.headline {
+    font-size: 55px;
+    text-align: center;
+} 
+
+.filter legend {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.filter label {
+    color: rgba(40, 49, 54, 1);
+}
+
+.filter button {
+    text-transform: uppercase;
+    font-weight: bold;
+}

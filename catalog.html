@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -9,7 +12,7 @@
   <header>
 <a href="index.html"><img src="img/nerds-logo.png" alt="Нёрдс"></a>
 
-<nav>
+<nav class="menu">
  <ul>
  <li><a href="">Студия</a></li>
  <li><a href="">Клиенты</a></li>
@@ -21,15 +24,15 @@
   <a href="">Корзина</a>
  </nav>
  
- <h1>Магазин готовых шаблонов</h1>
+ <h1 class="headline">Магазин готовых шаблонов</h1>
  
 </header>
   
    <main>
    
-   <aside> 
+   <aside class="filter"> 
    <div>
-      <p>Стоимость:</p> <a href=""> </a>
+     <legend><p>Стоимость:</p> <a href=""> </a></legend>
    </div>
    
    <div>
@@ -43,7 +46,7 @@
    </div>
    
    <div>
-   <p>Особенности:</p>
+   <legend>Особенности:</legend>
    <input type="checkbox" id="slide" checked>
    <label for="slide"> Слайдер </label>
    <input type="checkbox" id="advantages">
@@ -100,7 +103,7 @@
      </div>
    </section>
    
-   <section>
+   <section class="form">
        <form>
            <p>Напишите нам</p>
            <label for="name">Ваше имя:</label>
@@ -121,7 +124,7 @@
      </ul>
   </section>
    
-    <section>
+    <section class="bottom_section">
     <h2> Давайте дружить, это выгодно!</h2>
     <p> Скидка 10% для друзей из социальных сетей</p>
     </section>
