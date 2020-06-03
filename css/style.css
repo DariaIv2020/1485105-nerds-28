@@ -10,12 +10,23 @@
     height: 100%;
 }
 
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
 body {font-family: 'Roboto';
-font-size: 16px;}
+font-size: 16px;
+margin:0px;
+}
 
 header {
     background-color: var(--background-color);
+    display: flex;
 }
+
 
 a {
     color: var(--link-color);
@@ -23,16 +34,61 @@ a {
 }
 .menu {
     display: flex;
+    align-items: center;
     text-transform: uppercase;
     font-weight:bold;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.main-navigation {
+    display: flex;
+  width: 100%;
+    padding-top: 76px;
+}
+
+.header_logo {
+    padding-top: 49px;
 }
 
 .navigation {
-   list-style-type: none; 
+    display: flex;
+    list-style-type: none;
+    padding-left: 202px;
+}
+
+.navigation_a {
+    display: block;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.basket {
+    padding-left: 245px;
+    padding-top:49px;
+    
+}
+
+.basket_img::before {
+    content: "";
+    
+    width: 15px;
+    height: 15px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.block_1 {
+    display: grid;
 }
 
 .service {
-    display: grid;
+    display: flex;
+    padding-left: 90px;
+    padding-right: 100px;
+    flex-wrap: wrap;
+    
 }
 
 .service p {
@@ -51,30 +107,31 @@ a {
     text-transform: uppercase;
 }
 
+.servise_block {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .form {
     display:none;
 }
 
 }
 .bottom_section {
-    line-height: 22px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .bottom_section h2 {
     font-size: 36px;
 } 
 
-.bottom-section p {
+.bottom_section p {
     color: var(--accent-color);
 }
 
-.headline {
-    font-size: 55px;
-    text-align: center;
-} 
-
 .filter {
-    display: grid;
+    padding-left: 140px;
 }
 
 .filter legend {
@@ -97,5 +154,43 @@ a {
 }
 
 .catalog {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
+    margin-top: 48px;
 }
+
+.main_catalog{
+  display: grid;
+    min-width: 100%;
+    grid-gap: 0 30px;
+    grid-auto-columns: calc(25% - 30px);
+    grid-auto-flow: column;
+    height: auto;
+    
+}
+
+.filter_legend {
+    margin-bottom: 19px;
+    margin-top: 46px;
+}
+
+.filter_option {
+    padding-bottom: 15px;
+}
+
+.button_filters {
+    margin-top: 50px;
+}
+
+.pavigation {
+    display: flex;
+    padding: 0 5px;
+}
+
+.pavigation_button {
+    flex: 1 1 auto;
+  margin: 0 5px;
+}
+

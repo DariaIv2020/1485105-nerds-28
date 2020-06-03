@@ -7,99 +7,106 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
   </head>
-  <body>
+  <body class="page-body">
   
-  <header>
-<a href="index.html"><img src="img/nerds-logo.png" alt="Нёрдс"></a>
+<header class="main_header">
 
-<nav class="menu">
- <ul>
- <li><a href="">Студия</a></li>
- <li><a href="">Клиенты</a></li>
- <li><a href="">Магазин</a></li>
- <li><a href="">Контакты</a></li>
- </ul>
-
-  <img src="https://via.placeholder.com/150x100" alt="">
-  <a href="">Корзина</a>
+ <nav class="menu">
+   
+    <a class="header_logo" href="index.html"><img src="img/nerds-logo.png" alt="Нёрдс"></a>
+ 
+ <div class="main-navigation">
+ <ul class="navigation">
+  <li><a class="navigation_a" href="">Студия</a></li>
+  <li><a class="navigation_a" href="">Клиенты</a></li>
+  <li><a class="navigation_a" href="">Магазин</a></li>
+  <li><a class="navigation_a" href="">Контакты</a></li>
+  </ul>
+  <div class="basket">
+      <img src="" alt=""> <a href="">Корзина</a>
+  </div>
+  </div>
  </nav>
- 
- <h1 class="headline">Магазин готовых шаблонов</h1>
- 
 </header>
   
-   <main>
+   <main class="main_catalog">
    
-   <aside class="filter"> 
+   <div>
+       <aside class="filter"> 
    <div>
      <legend><p>Стоимость:</p> <a href=""> </a></legend>
    </div>
    
    <div>
-   <legend>Сетка:</legend>
-   <input type="radio" id="adaptive" checked>
-   <label for="adaptive">Адаптивная</label>
-   <input type="radio" id="fixed">
-   <label for="fixed">Фиксированная</label>
-   <input type="radio" id="rubber">
-   <label for="rubber">Резиновая</label>
+   <legend class="filter_legend">Сетка:</legend>
+   <div class="filter_option"><input type="radio" id="adaptive" checked>
+   <label for="adaptive">Адаптивная</label></div>
+   <div class="filter_option"><input type="radio" id="fixed">
+   <label for="fixed">Фиксированная</label></div>
+   <div class="filter_option"><input type="radio" id="rubber">
+   <label for="rubber">Резиновая</label></div>
    </div>
    
    <div>
-   <legend>Особенности:</legend>
-   <input type="checkbox" id="slide" checked>
-   <label for="slide"> Слайдер </label>
-   <input type="checkbox" id="advantages">
-   <label for="advantages"> Блок преимуществ </label>
-   <input type="checkbox" id="news" checked>
-   <label for="news"> Новости </label>
-   <input type="checkbox" id="gallery">
-   <label for="gallery"> Галерея </label>
-   <input type="checkbox" id="basket">
-   <label for="basket"> Корзина </label>  
+   <legend class="filter_legend">Особенности:</legend>
+   <div class="filter_option"><input type="checkbox" id="slide" checked>
+   <label for="slide"> Слайдер </label></div>
+   <div class="filter_option"><input type="checkbox" id="advantages">
+   <label for="advantages"> Блок преимуществ </label></div>
+   <div class="filter_option"><input type="checkbox" id="news" checked>
+   <label for="news"> Новости </label></div>
+   <div class="filter_option"><input type="checkbox" id="gallery">
+   <label for="gallery"> Галерея </label></div>
+   <div class="filter_option"><input type="checkbox" id="basket">
+   <label for="basket"> Корзина </label></div>  
    </div> 
    
-   <div>
+   <div style="button_filters">
        <button type="button"> Показать </button>
    </div>
    </aside>
    
-   <section>
+   
+   </div>
+   
+   <div>
+      <section>
       <div>
           <p> Сортировать </p>
           <a href=""> По цене </a>
           <a href=""> По типу </a>
           <a href=""> По названию </a>
       </div>
-   </section>
-   
-   <article class="catalog">
-      <div> <img src="img/sedona.png" alt="sedona"> </div>
-      <div> <img src="img/pink.png" alt="pink"> </div>
-      <div> <img src="img/barbershop.png" alt="barbershop borodinski"> </div>
-      <div> <img src="img/mishka.png" alt="Mishka"> </div>
-      <div> <img src="img/a+.png" alt="a+"> </div>
-      <div> <img src="img/kvast.png" alt="Кваст"> 
+       </section>
+       <article class="catalog">
+      <div> <img src="img/Path.jpg" alt="top_panel"> <img src="img/Mask%20Group.png" alt="sedona"> </div>
+      <div> <img src="img/Shape.jpg" alt="top_panel"> <img src="img/img-pink%201.png" alt="pink"> </div>
+      <div> <img src="img/Shape.jpg" alt="top_panel"> <img src="img/image_barbershop.png" alt="barbershop borodinski"> </div>
+      <div> <img src="img/Shape.jpg" alt="top_panel"> <img src="img/Mask%20Group2.png" alt="Mishka"> </div>
+      <div> <img src="img/Shape.jpg" alt="top_panel"> <img src="img/img-aplus%201.png" alt="a+"> </div>
+      <div> <img src="img/Path.jpg" alt="top_panel"> <img src="img/img-kvast%201.png" alt="Кваст"> 
       </div> 
        </article>
        
-       <div class="">
-          <a href=""> 1 </a>
-          <a href=""> 2 </a>
-          <a href=""> 3 </a>
-          <a href=""> Следующая </a> 
-       </div>
-       </main>
+       <div class="pavigation">
+          <a class="pavigation_button" href=""> 1 </a>
+          <a class="pavigation_button" href=""> 2 </a>
+          <a class="pavigation_button" href=""> 3 </a>
+          <a class="pavigation_button" href=""> Следующая </a> 
+       </div> 
+   </div>
+   </main>
   
    <footer class="page_footer">
    
    <section>
-    <img src="" alt="">
-    <div> 
+    <div class="map"><img src="img/map.jpg" alt="map">
+    <div class="adress"> 
     <h3> Nёrds design studio</h3>
         <h4> 19118, Санкт-Петербург, ул. Б.Конюшечная, д. 19/8</h4>
     <h4> тел.: +7 (812) 275-75-75 </h4>
     <a href=""> Напишие нам </a>
+     </div>
      </div>
    </section>
    
@@ -117,7 +124,7 @@
    </section>
    
     <section>
-     <ul>
+     <ul class="icons">
        <il><a href="https://vk.com"><img src="img/vk.svg" wigth="81px" height="81px" alt="vk"></a></il>
          <il><a href="https://ru-ru.facebook.com"><img src="img/facebook.svg" wigth="81px" height="81px" alt="facebook"></a></il>
          <il><a href="https://www.instagram.com"><img src="img/instagram.svg" wigth="81px" height="81px" alt="instagram"></a></il>   
