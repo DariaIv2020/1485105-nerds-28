@@ -8,6 +8,8 @@
 
 .page {
     height: 100%;
+    width: 1160px;
+    
 }
 
 .page-body {
@@ -79,6 +81,14 @@ a {
     background-position: 0 0;
 }
 
+.slide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    margin-left: 140px;
+    
+}
+
 .block_1 {
     display: grid;
 }
@@ -87,6 +97,8 @@ a {
     display: flex;
     padding-left: 90px;
     padding-right: 100px;
+    margin-left: 140px;
+    margin-right: 200px;
     flex-wrap: wrap;
     
 }
@@ -110,6 +122,38 @@ a {
 .servise_block {
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.servise_list {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: content;
+    list-style: none;
+    
+}
+
+.index-columns {
+    display:grid;
+    grid-template-columns: 651px 360px;
+    justify-content: center;
+}
+
+.index-columns2 {
+    
+}
+
+.container_advantages {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+
+.list_advantages {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    width: 374px;
+    list-style: none;
 }
 
 .form {
