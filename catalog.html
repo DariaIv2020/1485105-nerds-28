@@ -10,103 +10,151 @@
   <body class="page-body">
   
 <header class="main_header">
+  <nav class="navigation">
+  <a class="header_logo" href="index.html"><img src="img/nerds-logo.png" alt="Нёрдс" width="160" height="65"></a>
 
- <nav class="menu">
-   
-    <a class="header_logo" href="index.html"><img src="img/nerds-logo.png" alt="Нёрдс"></a>
- 
- <div class="main-navigation">
- <ul class="navigation">
+ <ul class="navigation_list">
   <li><a class="navigation_a" href="">Студия</a></li>
   <li><a class="navigation_a" href="">Клиенты</a></li>
   <li><a class="navigation_a" href="">Магазин</a></li>
   <li><a class="navigation_a" href="">Контакты</a></li>
   </ul>
-  <div class="basket">
-      <img src="" alt=""> <a href="">Корзина</a>
-  </div>
-  </div>
+  
+  <div><a class="basket" href="">Корзина</a></div>
  </nav>
 </header>
   
    <main class="main_catalog">
    
-   <div>
+   <form method="get" action="https://echo.htmlacademy.ru">
+      
        <aside class="filter"> 
-   <div>
-     <legend><p>Стоимость:</p> <a href=""> </a></legend>
-   </div>
+       
+       <fieldset class="price_filter"> 
+         <legend class="legend_filter"> Стоимость: </legend>
+          <div class="price_range">
+          <div class="price_controls">
+          <div class="price_scale">
+             <div class="price_bar"> </div>
+              </div>
+              
+              <div class="toggle toggle_min"></div>
+              <div class="toggle toggle_max"></div>
+              </div>
+              
+              <div class="price">
+              <label class="label_price">
+              от <input class="input_price" type="number" name="min-price" value=0>  
+              </label>
+              <label class="label_price">
+              до <input class="input_price" type="number" name="max-price" value=15000>  
+              </label>
+              </div>
+              </div>
+           </fieldset>
    
+   
+   <fieldset class="grid_filter">
    <div>
    <legend class="filter_legend">Сетка:</legend>
-   <div class="filter_option"><input type="radio" id="adaptive" checked>
+   <div class="filter_option"><input type="radio" id="adaptive" class="visually-hidden">
    <label for="adaptive">Адаптивная</label></div>
-   <div class="filter_option"><input type="radio" id="fixed">
+   <div class="filter_option"><input type="radio" id="fixed" class="visually-hidden">
    <label for="fixed">Фиксированная</label></div>
-   <div class="filter_option"><input type="radio" id="rubber">
+   <div class="filter_option"><input type="radio" id="rubber" class="visually-hidden">
    <label for="rubber">Резиновая</label></div>
    </div>
+   </fieldset>
    
+   <fieldset class="features_filter">
    <div>
    <legend class="filter_legend">Особенности:</legend>
-   <div class="filter_option"><input type="checkbox" id="slide" checked>
-   <label for="slide"> Слайдер </label></div>
-   <div class="filter_option"><input type="checkbox" id="advantages">
-   <label for="advantages"> Блок преимуществ </label></div>
-   <div class="filter_option"><input type="checkbox" id="news" checked>
-   <label for="news"> Новости </label></div>
-   <div class="filter_option"><input type="checkbox" id="gallery">
-   <label for="gallery"> Галерея </label></div>
-   <div class="filter_option"><input type="checkbox" id="basket">
-   <label for="basket"> Корзина </label></div>  
+   <div class="filter_option"><input class= "visually-hidden checkbox_filter" type="checkbox" id="slide" checked>
+   <label class="label_checkbox" for="slide"> Слайдер </label></div>
+   <div class="visually-hidden filter_option"><input class= "checkbox_filter" type="checkbox" id="advantages">
+   <label class="label_checkbox" for="advantages"> Блок преимуществ </label></div>
+   <div class="visually-hidden filter_option"><input class= "checkbox_filter" type="checkbox" id="news" checked>
+   <label class="label_checkbox" for="news"> Новости </label></div>
+   <div class="filter_option"><input class= "visually-hidden checkbox_filter" type="checkbox" id="gallery">
+   <label class="label_checkbox" for="gallery"> Галерея </label></div>
+   <div class="filter_option"><input class= "visually-hidden checkbox_filter" type="checkbox" id="basket">
+   <label class="label_checkbox" for="basket"> Корзина </label></div>  
    </div> 
+   </fieldset>
    
-   <div style="button_filters">
-       <button type="button"> Показать </button>
+   <div style="button_filter">
+       <button class= "button_gray" type="submit"> Показать </button>
    </div>
+   
    </aside>
+       </form>
    
-   
-   </div>
    
    <div>
-      <section>
-      <div>
-          <p> Сортировать </p>
-          <a href=""> По цене </a>
-          <a href=""> По типу </a>
-          <a href=""> По названию </a>
+      
+       
+       
+<article class="catalog">
+    
+    <section>
+      <div class="sort">
+         
+          <div class="sorting_type_text"> Сортировать: </div>
+          
+          
+          <a href="catalog.html" class="sorting_text price"> По цене </a>
+          
+          <a href="catalog.html" class="sorting_text type"> По типу </a>
+          
+          <a href="catalog.html" class="sorting_text name"> По названию </a>
+          
+          <a href="catalog.html" class="sorting_text arrow"> &#9660; </a>
+          
+          <a href="catalog.html" class="sorting_text"> &#9650; </a>
       </div>
        </section>
-       <article class="catalog">
-      <div> <img src="img/Path.jpg" alt="top_panel"> <img src="img/Mask%20Group.png" alt="sedona"> </div>
-      <div> <img src="img/Shape.jpg" alt="top_panel"> <img src="img/img-pink%201.png" alt="pink"> </div>
-      <div> <img src="img/Shape.jpg" alt="top_panel"> <img src="img/image_barbershop.png" alt="barbershop borodinski"> </div>
-      <div> <img src="img/Shape.jpg" alt="top_panel"> <img src="img/Mask%20Group2.png" alt="Mishka"> </div>
-      <div> <img src="img/Shape.jpg" alt="top_panel"> <img src="img/img-aplus%201.png" alt="a+"> </div>
-      <div> <img src="img/Path.jpg" alt="top_panel"> <img src="img/img-kvast%201.png" alt="Кваст"> 
-      </div> 
-       </article>
-       
-       <div class="pavigation">
-          <a class="pavigation_button" href=""> 1 </a>
-          <a class="pavigation_button" href=""> 2 </a>
-          <a class="pavigation_button" href=""> 3 </a>
-          <a class="pavigation_button" href=""> Следующая </a> 
+    
+     <ul class="catalog_block">
+     
+      <li class="catalog_product"> <img class="path" src="img/Path.jpg" alt="top_panel"> <img src="img/Mask%20Group.png" alt="sedona"> </li>
+      
+      <li class="catalog_product"> <img class="path" src="img/Shape.jpg" alt="top_panel"> <img src="img/img-pink%201.png" alt="pink"> </li>
+      
+      <li class="catalog_product"> <img class="path" src="img/Shape.jpg" alt="top_panel"> <img src="img/image_barbershop.png" alt="barbershop borodinski"> </li>
+      
+      <li class="catalog_product"> <img class="path" src="img/Shape.jpg" alt="top_panel"> <img src="img/Mask%20Group2.png" alt="Mishka"> </li>
+      
+      <li class="catalog_product"> <img class="path" src="img/Shape.jpg" alt="top_panel"> <img src="img/img-aplus%201.png" alt="a+"> </li>
+      
+      <li class="catalog_product"> <img class="path" src="img/Path.jpg" alt="top_panel"> <img src="img/img-kvast%201.png" alt="Кваст"> 
+      </li> 
+    </ul>
+    
+    <div class="pagination">
+          <a class="pagination_button" href=""> 1 </a>
+          <a class="pagination_button" href=""> 2 </a>
+          <a class="pagination_button" href=""> 3 </a>
+          <a class="pagination_button" href=""> Следующая </a> 
        </div> 
+</article>
+       
+       
    </div>
    </main>
   
    <footer class="page_footer">
    
-   <section>
-    <div class="map"><img src="img/map.jpg" alt="map">
-    <div class="adress"> 
-    <h3> Nёrds design studio</h3>
-        <h4> 19118, Санкт-Петербург, ул. Б.Конюшечная, д. 19/8</h4>
-    <h4> тел.: +7 (812) 275-75-75 </h4>
-    <a href=""> Напишие нам </a>
+   <section class="map">
+    <div class="map_img"> <img src="img/map1.png" width="1200" height="346" alt="Карта">
+    <div class="adress">
+    <div class="adress_text">  
+    <h3 class="adress_head"> Nёrds design studio</h3>
+    <h4 class="adress_tel"> 19118, Санкт-Петербург, <br> ул. Б.Конюшечная, д. 19/8</h4>
+    <h4 class="adress_tel"> тел.: +7 (812) 275-75-75 </h4>
+    <button type="button" class="button_red">Напишите нам<img src=""></button>
+        </div>
      </div>
+     <div class="marker_map"> </div>
      </div>
    </section>
    
@@ -123,17 +171,25 @@
        </form>
    </section>
    
-    <section>
-     <ul class="icons">
-       <il><a href="https://vk.com"><img src="img/vk.svg" wigth="81px" height="81px" alt="vk"></a></il>
-         <il><a href="https://ru-ru.facebook.com"><img src="img/facebook.svg" wigth="81px" height="81px" alt="facebook"></a></il>
-         <il><a href="https://www.instagram.com"><img src="img/instagram.svg" wigth="81px" height="81px" alt="instagram"></a></il>   
-     </ul>
-  </section>
    
-    <section class="bottom_section">
-    <h2> Давайте дружить, это выгодно!</h2>
-    <p> Скидка 10% для друзей из социальных сетей</p>
+   
+<section class="footer_icon">
+  <ul class="icon_list">
+    <li class="social_network">
+       
+        <div class="social_network_icon">
+         <a class=" " href="https://vk.com"><img src="img/vk.svg" wigth="81px" height="81px" alt="vk"></a>
+         <a a class=" " href="https://ru-ru.facebook.com"><img src="img/facebook.svg" wigth="81px" height="81px" alt="facebook"></a>
+         <a a class=" " href="https://www.instagram.com"><img src="img/instagram.svg" wigth="81px" height="81px" alt="instagram"></a>
+         </div>
+    </li>
+    
+<li class="bottom_section">
+    <h2 class="bottom_text"> Давайте дружить, это выгодно!</h2>
+    <p class="bottom_paragraph"> Скидка 10% для друзей из социальных сетей</p>
+  </li>
+    </ul>
+    
     </section>
       </footer>
 
