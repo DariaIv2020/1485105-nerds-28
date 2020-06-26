@@ -729,25 +729,18 @@ border-radius: 3px;
 	margin-top: 47px;
 }
 
-/*
+
 .submit_form:hover,
 .submit_form:focus {
     background-color: var(--button-color-red-hover);
-} */
-/*
+} 
+
+
 .submit_form:active {
     background-color: var(--button-color-red-active);
-    box-shadow: inset 0px 3px 0px var(--color-shadow); */
+    box-shadow: inset 0px 3px 0px var(--color-shadow);
 }
 
-
-.submit_form_text {
-}
-
-/*
-.submit_form:active .submit_form_text{
-    opacity: 30%;
-} */
 
 
 
@@ -1010,6 +1003,10 @@ border-radius: 3px;
     border: none;
 }
 
+
+.features_filter {
+	margin-top: 43px;
+}
 
 
 .price_range {
