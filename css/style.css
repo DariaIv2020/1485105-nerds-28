@@ -994,12 +994,10 @@ border-radius: 3px;
 /*  Фильтр Цена  */
 
 .price_filter {
-    margin-top: 55px;
     margin-bottom: 54px;
 }
 
 .price_filter, .grid_filter, .features_filter {
-    margin: 0;
     padding: 0;
     border: none;
 }
