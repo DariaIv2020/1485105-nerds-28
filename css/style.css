@@ -58,15 +58,15 @@ input[type="radio"].visually-hidden {
 /* ************ Button *************** */
 
 .button_red {
-    padding-top: 17px;
-    padding-bottom: 15px;
-    padding-left: 54px;
-    padding-right: 54px;
-    border-radius: 3px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 54px;
+  padding-right: 54px;
+  border-radius: 3px;
   font: inherit;
   text-align: center;
   color: var(--button-color);
-    font-weight: 500;
+  font-weight: 500;
   vertical-align: middle;
   text-transform: uppercase;
   background-color: var(--button-color-red);
@@ -102,7 +102,6 @@ img {
 
 .page {
     height: 100%;
-    width: 1160px;
     margin:0 auto;
 }
 
@@ -119,8 +118,8 @@ body {
 }
 
 a {
-    color: var(--link-color);
-    text-decoration: none;
+	color: var(--link-color);
+	text-decoration: none;
 }
 
 
@@ -128,27 +127,32 @@ a {
 
 /* ********* Main header *********** */
 
+.header_logo {
+	width: 160px;
+	height: 65px;
+} 
+
+
 .header_logo:active {
-    opacity: 30%;
+	opacity: 30%;
 }
 
-.header_logo {
-  width: 160px;
-  height: 65px;
-}
+
 
 .main_header {
-    width: 100%;
     background-color: var(--background-color);
-	background-size: 100%;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 /* ******** Main navigation ********* */
 
 .main_navigation {
+	width: 1160px;
+	margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 55px;
     padding-bottom: 7px;
 }
 
@@ -167,6 +171,16 @@ a {
     padding:0;
     align-content: end;
     grid-column-gap: 209px;
+}
+
+.container {
+	
+	
+}
+
+.cont_r {
+	
+	
 }
 
 .navigation_list {
@@ -228,15 +242,15 @@ a {
 }
 
 .navigation_a::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 0px;
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0px;
     top: 2px;
-  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z' fill='%23A6A6A6'/%3E%3Cpath d='M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z' fill='%23A6A6A6'/%3E%3Cpath d='M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z' fill='%23A6A6A6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+	background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z' fill='%23A6A6A6'/%3E%3Cpath d='M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z' fill='%23A6A6A6'/%3E%3Cpath d='M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z' fill='%23A6A6A6'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .basket a,
@@ -248,10 +262,14 @@ a {
 
 /* ********  Slide Block ************ */
 
-
+.main_slider {
+	background-color: var(--background-color);
+	width: 100%;
+}
 
 .slider {
-    width: 1160px;
+	margin: 0 auto;
+	width: 1160px;
 	margin-bottom: 80px;
     
 }
@@ -332,6 +350,8 @@ a {
 }
 
 .service{
+	width: 1160px;
+	margin: 0 auto;
     margin-bottom: 80px;
 }
 
@@ -376,7 +396,7 @@ a {
     padding: 10px 30px;
     text-align: center;
     background-color: var(--button-color-red);
-border-radius: 3px;
+    border-radius: 3px;
     border: none;
 }
     
@@ -397,7 +417,7 @@ border-radius: 3px;
 /* ********* Зелёная кнопка ********** */
 
 .button_servise_green {  
-  background-color: var(--button-color-green);
+	background-color: var(--button-color-green);
 }
     
 .button_servise_green:hover,
@@ -411,9 +431,8 @@ border-radius: 3px;
 
 /* ********* Жёлтая кнопка *********** */
 
-.button_servise_yellow {
-    
-  background-color: var(--button-color-yellow);
+.button_servise_yellow { 
+	background-color: var(--button-color-yellow);
 }
     
 .button_servise_yellow:hover,
@@ -434,13 +453,12 @@ border-radius: 3px;
 /* ************************************* МЫ МАЛЕНЬКАЯ, НО ГОРДАЯ ДИЗАЙН СТУДИЯ ************************************** */
 
 .index-columns {
+	width: 1160px;
+	margin: 0 auto;
     display:grid;
     grid-template-columns: 1fr 360px;
     margin-bottom: 73px;
 }
-
-.index-column_left
-
 
 
 .index-head {
@@ -554,12 +572,11 @@ border-radius: 3px;
 /* ******* Блок с логотипами *******  */
 
 .logo_block{
+	width: 1160px;
+	margin: 0 auto;
     display: grid;
     grid-template-columns: 199px 1fr 209px 1fr 185px 1fr 173px;
     align-items:center;
-    margin-bottom: 44px;
-    margin-left: 32px;
-    margin-right: 41px;
     grid-column-gap: 50px;
     
     
@@ -860,8 +877,9 @@ border-radius: 3px;
 /* ********** Каталог *********** */
 
 .main_catalog{
+	width: 1160px;
+	margin: 0 auto;
     display: grid;
-    min-width: 100%;
     height: auto;
     grid-template-columns: 260px 1fr;
 }
@@ -1092,10 +1110,10 @@ border-radius: 3px;
 }
 
 .label_checkbox {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  user-select: none;
+	position: relative;
+	display: block;
+	cursor: pointer;
+	user-select: none;
     padding-left: 36px;
 }
 
@@ -1104,13 +1122,13 @@ border-radius: 3px;
 }
 
 .label_checkbox::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 0;
-  width: 16px;
-  height: 16px;
-  border: 2px solid var(--checkbox-color);
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0;
+	width: 16px;
+	height: 16px;
+	border: 2px solid var(--checkbox-color);
     border-radius: 3px;
     opacity: 40%;
 }
@@ -1123,13 +1141,13 @@ border-radius: 3px;
 
 
 .checkbox_filter:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 26px;
-  height: 23px;
-  background-image: url("data:image/svg+xml,%3Csvg width='22' height='18' viewBox='0 0 22 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.23726 6.48591L0.426758 9.31491L8.15887 17.0979L21.9998 3.16591L19.1903 0.336914L8.15887 11.4389L3.23726 6.48591Z' fill='%234D4D4D'/%3E%3C/svg%3E%0A");
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 26px;
+	height: 23px;
+	background-image: url("data:image/svg+xml,%3Csvg width='22' height='18' viewBox='0 0 22 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.23726 6.48591L0.426758 9.31491L8.15887 17.0979L21.9998 3.16591L19.1903 0.336914L8.15887 11.4389L3.23726 6.48591Z' fill='%234D4D4D'/%3E%3C/svg%3E%0A");
 	
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -1137,10 +1155,7 @@ border-radius: 3px;
 }
 
 
-.checkbox_filter:checked: + label::after
-
-{
-	
+.checkbox_filter:checked: + label::after {	
 }
 
 /*  Фильтры радиокнопки   */
@@ -1155,13 +1170,12 @@ border-radius: 3px;
 }
 
 .label_radio {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  user-select: none;
+	position: relative;
+	display: block;
+	cursor: pointer;
+	user-select: none;
     padding-left: 36px;
     color: var(--basic-color);
-
 }
 
 .label_radio:hover::before,
@@ -1170,44 +1184,43 @@ border-radius: 3px;
 }
 
 .label_radio::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: -1px;
-  width: 17px;
-  height: 17px;
-  border: 3px solid var(--checkbox-color);
-  border-radius: 50%;
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: -1px;
+	width: 17px;
+	height: 17px;
+	border: 3px solid var(--checkbox-color);
+	border-radius: 50%;
     opacity: 40%;
 }
 
 .radio_filter:checked + label::after {
-   content: "";
-  position: absolute;
-  top: 6px;
-  left: 7px;
-  width: 9px;
-  height: 9px;
-  background-color: var(--checkbox-color);
-  border-radius: 50%;
+	content: "";
+	position: absolute;
+	top: 6px;
+	left: 7px;
+	width: 9px;
+	height: 9px;
+	background-color: var(--checkbox-color);
+	border-radius: 50%;
     opacity: 40%;
 }
 
 /* ***********  Кнопка  ************  */
 
 .button_gray {
-
-  margin-right: 16px;
-  font: inherit;
+	margin-right: 16px;
+	font: inherit;
     padding-left: 88px;
     padding-right: 89px;
     padding-top: 17px;
     padding-bottom: 15px;
-  text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--button-color-gray);
+	text-align: center;
+	color: var(--basic-white);
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: var(--button-color-gray);
     border-radius: 3px;
     border: none;
 	margin-top: 48px;
@@ -1269,6 +1282,8 @@ border-radius: 3px;
 /* *********** FOOTER *************  */
 
 .page_footer {
+	width: 1160px;
+	margin: 0 auto;
     display: grid;
     margin-bottom: 76px;
     
@@ -1289,7 +1304,6 @@ border-radius: 3px;
     background-color: var(--button-color);
     width: 319px;
     height: 308px;
-     
     position:absolute;
     top: 19px;
     left: 140px;
@@ -1313,7 +1327,7 @@ border-radius: 3px;
 
 marker_map {
     position: absolute
-        left: 100px;
+    left: 100px;
 }
     
 
@@ -1323,14 +1337,14 @@ marker_map {
     padding-left: 44px;
     padding-right: 44px;
     border-radius: 3px;
-  font: inherit;
-  text-align: center;
-  color: var(--button-color);
+	font: inherit;
+	text-align: center;
+	color: var(--button-color);
     font-weight: 500;
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--button-color-red);
-  border: none;
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: var(--button-color-red);
+	border: none;
 }
 
 .button_red_map:hover,
