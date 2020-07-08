@@ -1168,7 +1168,6 @@ a {
 	width: 26px;
 	height: 23px;
 	background-image: url("data:image/svg+xml,%3Csvg width='22' height='18' viewBox='0 0 22 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.23726 6.48591L0.426758 9.31491L8.15887 17.0979L21.9998 3.16591L19.1903 0.336914L8.15887 11.4389L3.23726 6.48591Z' fill='%234D4D4D'/%3E%3C/svg%3E%0A");
-	box-shadow: 1px 1px 0px 30px rgba(199,127,199,1);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
